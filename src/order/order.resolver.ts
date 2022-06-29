@@ -1,8 +1,8 @@
 import { Resolver, Query, Args, Mutation } from '@nestjs/graphql';
-import { Order } from './orders.model';
+import { Order } from './order.model';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { OrderInput } from './orders.schema';
+import { OrderInput } from './order.schema';
 
 @Resolver((of) => Order)
 export class OrdersResolver {
